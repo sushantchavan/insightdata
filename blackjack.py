@@ -30,15 +30,7 @@ def showCards(player) :
 def options():
 	print 'What will be your next move? \n'
 	choice = raw_input('Press 1 to Hit and 2 to Stand \n\n')
-	if(choice == 1 or choice == 2)
-		return choice
-	else:
-		print 'Please provide a valid input, to quit press q'
-		q = raw_input(' ')
-		if(q == 'q' or 'Q'):
-			exit()
-		else:
-			options()
+	return choice
 
 def bet(user) :
 	betValue = raw_input('Please provide your bet value \n')
